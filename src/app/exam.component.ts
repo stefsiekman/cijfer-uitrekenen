@@ -19,7 +19,7 @@ export class ExamComponent implements OnInit {
     exam: number;
 
     l: number;
-    s: number = 42;
+    s: number;
     n: number;
 
     loadedL: boolean;

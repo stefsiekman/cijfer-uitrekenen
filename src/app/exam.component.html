@@ -29,7 +29,7 @@
 
     <div *ngIf="n !== undefined">
 
-        <h2>
+        <h2 *ngIf="s !== undefined && l !== undefined">
             Je hebt een {{grade(s, l, n) | number:"1.1-1"}}
         </h2>
 
@@ -72,7 +72,7 @@
             </li>
         </ul>
 
-        <table class="table table-condensed table-striped">
+        <table *ngIf="s !== undefined && l !== undefined" class="table table-condensed table-striped">
             <thead>
                 <tr>
                     <td>Examen</td>
@@ -90,7 +90,7 @@
         </table>
 
         <p *ngIf="s !== undefined && l !== undefined">
-            <i><sup>1</sup> Uitgaande van een N-term tussen de {{0 | number:"1.1-1"}} en {{2 | number:"1.1-1"}}.<br>
+            <i><sup>1</sup> Uitgaande van een N-term tussen de {{0 | number:"1.1-1"}} en {{2 | number:"1.1-1"}}. Dit is waarschijnlijk, maar niet verzekerd.<br>
             <sup>2</sup> Dit cijfer is indicatief. Elk jaar kan de N-term anders zijn.</i>
         </p>
 
