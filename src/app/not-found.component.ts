@@ -2,8 +2,8 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: "app-root",
-    template: `<router-outlet></router-outlet>`,
+    template: `Pagina niet gevonden.`,
 })
-export class AppComponent {
+export class NotFoundComponent {
 
 }

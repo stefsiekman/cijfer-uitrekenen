@@ -1,0 +1,29 @@
+<div class="col-md-4">
+    <form class="form">
+        <div class="form-group">
+            <label>Niveau</label>
+            <select name="level" class="form-control" [(ngModel)]="level">
+                <option *ngFor="let level of examData; let i = index"
+                [value]="i">
+                    {{level.description}}
+                </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Examenonderwerp</label>
+            <select name="subject" class="form-control" [(ngModel)]="subject">
+                <option *ngFor="let subject of examData[level].subjects; let i = index" [value]="i">{{subject.description}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Jaar en tijdvak</label>
+            <select name="subject" class="form-control" [(ngModel)]="exam">
+                <option *ngFor="let exam of examData[level].subjects[subject].exams; let i = index" [value]="i">{{exam.description}}</option>
+            </select>
+        </div>
+
+        <button class="btn btn-primary" (click)="openExam(level, subject, exam)">Examen selecteren</button>
+    </form>
+</div>

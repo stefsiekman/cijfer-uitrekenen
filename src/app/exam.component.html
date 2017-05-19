@@ -1,0 +1,109 @@
+<div class="col-xs-12">
+    <h2>
+        {{examData[level]?.description}}:
+        {{examData[level]?.subjects[subject]?.description}}
+        ({{examData[level]?.subjects[subject]?.exams[exam]?.description}})
+    </h2>
+</div>
+
+<div class="col-md-3">
+
+    <form class="form">
+        <div class="form-group">
+            <label class="control-label">Maximum aantal punten</label>
+            <input [(ngModel)]="l" name="l" type="number" min=0 max=100 step=1 class="form-control" [disabled]="loadedL">
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Behaald aantal punten</label>
+            <input [(ngModel)]="s" name="s" type="number" min=0 [max]="l" step=1 class="form-control">
+        </div>
+    </form>
+
+    <p>
+        <button class="btn btn-default" (click)="reselect()">Ander examen selecteren</button>
+    </p>
+
+</div>
+<div class="col-md-3">
+
+    <div *ngIf="n !== undefined">
+
+        <h2>
+            Je hebt een {{grade(s, l, n) | number:"1.1-1"}}
+        </h2>
+
+        <p>
+            De N-term is <b>{{n | number:"1.1-1"}}</b>
+        </p>
+
+    </div>
+
+
+    <div *ngIf="n === undefined">
+
+        <p>
+            <b>De N-term is nog niet bekend</b>
+        </p>
+
+        <div *ngIf="s !== undefined && l !== undefined">
+            <p>
+                Je hebt <b>{{round(s/l*100)}}%</b> van de {{l}} punten.
+            </p>
+            <p>
+                Dit betekent dat je cijfer tussen de
+                <b>{{grade(s, l, 0) | number:"1.1-1"}}</b>
+                en
+                <b>{{grade(s, l, 2) | number:"1.1-1"}}</b>
+                ligt.<sup>1</sup>
+            </p>
+        </div>
+
+
+        <p *ngIf="s !== undefined && l !== undefined">
+            De diagonalen hiernaast geven vijf mogelijke N-termen weer. Waar deze kruisen met de verticale rode lijn kan je je cijfer aflezen.
+        </p>
+
+
+        <ul *ngIf="s !== undefined && l !== undefined">
+            <li *ngFor="let nEg of [2, 1.5, 1, 0.5, 0]">
+                N-term = <b>{{nEg | number:"1.1-1"}}</b>:
+                cijfer <b>{{grade(s, l, nEg) | number:"1.1-1"}}</b>
+            </li>
+        </ul>
+
+        <table class="table table-condensed table-striped">
+            <thead>
+                <tr>
+                    <td>Examen</td>
+                    <td>N-term</td>
+                    <td>Cijfer <sup>2</sup></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let examData of examData[level]?.subjects[subject]?.exams">
+                    <td>{{examData.description}}</td>
+                    <td>{{examData.n !== undefined ? (examData.n | number:"1.1-1") : "?"}}</td>
+                    <td>{{examData.n !== undefined ? (gradeOld(s, l, examData.l, examData.n) | number:"1.1-1") : "?"}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p *ngIf="s !== undefined && l !== undefined">
+            <i><sup>1</sup> Uitgaande van een N-term tussen de {{0 | number:"1.1-1"}} en {{2 | number:"1.1-1"}}.<br>
+            <sup>2</sup> Dit cijfer is indicatief. Elk jaar kan de N-term anders zijn.</i>
+        </p>
+
+    </div>
+
+</div>
+<div class="col-md-6">
+
+    <div class="graph">
+        <div class="score-line" [style.left]="s/l*100+'%'" *ngIf="s !== undefined">
+
+        </div>
+    </div>
+
+
+</div>
