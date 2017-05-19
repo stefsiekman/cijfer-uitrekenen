@@ -1,3 +1,57 @@
-<h1>
-  {{title}}
-</h1>
+<div class="col-md-4">
+    <h2>Je resultaten</h2>
+    <form class="form">
+        <div class="form-group">
+            <label>Niveau</label>
+            <select name="level" class="form-control" [(ngModel)]="level">
+                <option *ngFor="let level of getArray(examData)" [value]="level">{{level}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Examenonderwerp</label>
+            <select name="exam_subject" class="form-control" [(ngModel)]="examSubject" [disabled]="!level">
+                <option *ngFor="let subject of getArray(examData[level])" [value]="subject">{{subject}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Jaar en tijdvak</label>
+            <select name="exam" class="form-control" [(ngModel)]="exam" [disabled]="!examSubject">
+                <option *ngFor="let time of (level ? getArray(examData[level][examSubject]) : [])" [value]="time">{{time}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Maximaal aantal punten</label>
+            <input name="l" [(ngModel)]="l" [value]="(level && examSubject && exam) ? examData[level][examSubject][exam].l : 100" class="form-control" type="number" min=0 max=100 step=1 [disabled]="level && examSubject && exam">
+        </div>
+        <div class="form-group">
+            <label>Aantal punten</label>
+            <input name="s" [(ngModel)]="s" class="form-control" type="number" min=0 [max]="l" step=1>
+        </div>
+    </form>
+</div>
+<div class="col-md-8">
+    <h2>Je cijfer</h2>
+    <p>
+        <b>De N-term is nog niet bekend</b>
+    </p>
+
+    <div *ngIf="s && l">
+        <p>
+            Je hebt <b>{{round(s/l*100)}}%</b> van de {{l}} punten.
+        </p>
+        <p>
+            Dit betekend dat je cijfer tussen de
+            <b>{{grade(s, l, 0) | number:"1.1-1"}}</b>
+            en
+            <b>{{grade(s, l, 2) | number:"1.1-1"}}</b>
+            ligt.<sup>1</sup>
+        </p>
+    </div>
+
+
+
+
+    <p *ngIf="s && l">
+        <i><sup>1</sup> Er van uitgaande dat de N-term tussen de 0,0 en 2,0 ligt.</i>
+    </p>
+</div>
