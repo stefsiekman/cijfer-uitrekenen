@@ -61,7 +61,7 @@
 
 
         <p *ngIf="s !== undefined && l !== undefined">
-            De diagonalen hiernaast geven vijf mogelijke N-termen weer. Waar deze kruisen met de verticale rode lijn kan je je cijfer aflezen.
+            De diagonalen hiernaast geven vijf mogelijke N-termen weer. Waar deze kruisen met de verticale blauwe lijn kan je je cijfer aflezen.
         </p>
 
 
@@ -98,12 +98,5 @@
 
 </div>
 <div class="col-md-6">
-
-    <div class="graph">
-        <div class="score-line" [style.left]="s/l*100+'%'" *ngIf="s !== undefined">
-
-        </div>
-    </div>
-
-
+    <graph [n]="n" [l]="l" [s]="s"></graph>
 </div>

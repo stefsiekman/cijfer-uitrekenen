@@ -7,6 +7,7 @@ import { RouterModule } from "@angular/router";
 import { AppComponent } from "./app.component";
 import { FindComponent } from "./find.component";
 import { ExamComponent } from "./exam.component";
+import { GraphComponent } from "./graph.component";
 import { NotFoundComponent } from "./not-found.component";
 
 @NgModule({
@@ -14,6 +15,7 @@ import { NotFoundComponent } from "./not-found.component";
         AppComponent,
         FindComponent,
         ExamComponent,
+        GraphComponent,
         NotFoundComponent
     ],
     imports: [
