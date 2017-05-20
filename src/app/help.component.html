@@ -1,0 +1,96 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-default" (click)="back()">Terug naar examen kiezen</button>
+    </div>
+
+    <div class="col-md-6 col-md-offset-3 col-xs-12">
+        <h2>Hoe werkt deze website?</h2>
+        <p>
+            Op deze pagina leg ik het zo kort mogelijk uit.
+        </p>
+    </div>
+
+    <div class="col-md-6">
+        <h2>1. Kies een examen</h2>
+        <p>
+            Kies een examen waarvan je je cijfer wilt berekenen.
+        </p>
+        <p>
+            Staat het examen dat je zoekt er niet bij? Laat het ons weten via:
+            <a href="mailto:&#104;&#111;&#105;&#064;&#099;&#105;&#106;&#102;&#101;&#114;&#045;&#117;&#105;&#116;&#114;&#101;&#107;&#101;&#110;&#101;&#110;&#046;&#110;&#108;">&#104;&#111;&#105;&#064;&#099;&#105;&#106;&#102;&#101;&#114;&#045;&#117;&#105;&#116;&#114;&#101;&#107;&#101;&#110;&#101;&#110;&#046;&#110;&#108;</a>
+        </p>
+    </div>
+
+    <div class="col-md-6">
+        <h2>2. Vul je aantal punten in</h2>
+        <p>
+            Kijk je examen eerst zelf na als je het aantal punten nog niet weet. Vervolgens kan je het aantal punten invullen.
+        </p>
+        <p>
+            Het kan zijn dat het maximum aantal punten dat te behalen in voor het examen nog niet bekend is. Vul dan zelf dit aantal in.
+        </p>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-6">
+        <h2>3. Bekijk de resultaten</h2>
+        <p>
+            Het is tijd om te kijken welk cijfer je (misschien) hebt!
+        </p>
+        <p>
+            <b>Als de N-term bekend is</b> krijg je direct je cijfer te zien, samen met de grafiek hiernaast.
+        </p>
+        <p>
+            De blauwe lijn geeft aan hoeveel procent van de punten je hebt gescoord.
+        </p>
+        <p>
+            De zwarte lijn geeft de nomering aan. Deze is afhankelijk van de N-term.
+        </p>
+        <p>
+            Vervolgens kan je aan de hand van de horizontale lijn je cijfer aflezen.
+        </p>
+    </div>
+
+    <div class="col-md-6">
+        <h2>&nbsp;</h2>
+        <graph [l]="100" [s]="60" [n]="1.5"></graph>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-6">
+        <p>
+            <b>Als de N-term nog niet bekend</b> is, weet je helaas je cijfer nog niet precies.
+        </p>
+        <p>
+            De grafiek die je dan te zien krijgt, werkt hetzelfde als wanneer de N-term wel bekend is. Nu worden er echter vijf mogelijke N-termen weergegeven.
+        </p>
+        <p>
+            Er zijn nu vijf horizontale lijnen waarvan je je cijfer af kan lezen.
+        </p>
+    </div>
+
+    <div class="col-md-6">
+        <graph [l]="100" [s]="60"></graph>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h2>Andere vragen</h2>
+        <p>
+            Heb je een vraag die niet op deze pagina beantwoord wordt? Laat het ons weten:
+            <a href="mailto:&#104;&#111;&#105;&#064;&#099;&#105;&#106;&#102;&#101;&#114;&#045;&#117;&#105;&#116;&#114;&#101;&#107;&#101;&#110;&#101;&#110;&#046;&#110;&#108;">&#104;&#111;&#105;&#064;&#099;&#105;&#106;&#102;&#101;&#114;&#045;&#117;&#105;&#116;&#114;&#101;&#107;&#101;&#110;&#101;&#110;&#046;&#110;&#108;</a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-default" (click)="back()">Terug naar examen kiezen</button>
+    </div>
+</div>

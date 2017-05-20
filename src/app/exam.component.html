@@ -1,3 +1,4 @@
+<div class="row">
 <div class="col-xs-12">
     <h2>
         {{examData[level]?.description}}:
@@ -91,7 +92,7 @@
 
         <p *ngIf="s !== undefined && l !== undefined">
             <i><sup>1</sup> Uitgaande van een N-term tussen de {{0 | number:"1.1-1"}} en {{2 | number:"1.1-1"}}. Dit is waarschijnlijk, maar niet verzekerd.<br>
-            <sup>2</sup> Dit cijfer is indicatief. Elk jaar kan de N-term anders zijn.</i>
+            <sup>2</sup> Dit is het cijfer als de N-term zou zijn zoals bij dat examen. Wees gewaarschuwd: de N-term kan bij jouw examen anders zijn.</i>
         </p>
 
     </div>
@@ -99,4 +100,5 @@
 </div>
 <div class="col-md-6">
     <graph [n]="n" [l]="l" [s]="s"></graph>
+</div>
 </div>
