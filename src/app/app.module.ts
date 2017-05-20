@@ -10,6 +10,7 @@ import { ExamComponent } from "./exam.component";
 import { GraphComponent } from "./graph.component";
 import { HelpComponent } from "./help.component";
 import { MistakeComponent } from "./mistake.component";
+import { DisclaimerComponent } from "./disclaimer.component";
 import { NotFoundComponent } from "./not-found.component";
 
 @NgModule({
@@ -20,6 +21,7 @@ import { NotFoundComponent } from "./not-found.component";
         GraphComponent,
         HelpComponent,
         MistakeComponent,
+        DisclaimerComponent,
         NotFoundComponent
     ],
     imports: [
@@ -42,6 +44,10 @@ import { NotFoundComponent } from "./not-found.component";
             {
                 path: "mistake",
                 component: MistakeComponent
+            },
+            {
+                path: "disclaimer",
+                component: DisclaimerComponent
             },
             {
                 path: "**",
