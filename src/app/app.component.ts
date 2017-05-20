@@ -4,7 +4,8 @@ import { Component } from "@angular/core";
     selector: "app-root",
     template: `<router-outlet></router-outlet>
     <div class="col-xs-12 footer">
-        <a [routerLink]="['help']">Hoe werkt deze website?</a>
+        <a [routerLink]="['help']">Hoe werkt deze website?</a> |
+        <a [routerLink]="['mistake']">Ik heb een fout gevonden!</a>
     </div>`,
 })
 export class AppComponent {

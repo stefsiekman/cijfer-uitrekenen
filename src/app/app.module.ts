@@ -9,6 +9,7 @@ import { FindComponent } from "./find.component";
 import { ExamComponent } from "./exam.component";
 import { GraphComponent } from "./graph.component";
 import { HelpComponent } from "./help.component";
+import { MistakeComponent } from "./mistake.component";
 import { NotFoundComponent } from "./not-found.component";
 
 @NgModule({
@@ -18,6 +19,7 @@ import { NotFoundComponent } from "./not-found.component";
         ExamComponent,
         GraphComponent,
         HelpComponent,
+        MistakeComponent,
         NotFoundComponent
     ],
     imports: [
@@ -36,6 +38,10 @@ import { NotFoundComponent } from "./not-found.component";
             {
                 path: "help",
                 component: HelpComponent
+            },
+            {
+                path: "mistake",
+                component: MistakeComponent
             },
             {
                 path: "**",
