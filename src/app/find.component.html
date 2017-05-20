@@ -1,31 +1,40 @@
 <div class="row">
-<div class="col-md-4 col-md-offset-4">
-    <form class="form">
-        <div class="form-group">
-            <label>Niveau</label>
-            <select name="level" class="form-control" [(ngModel)]="level">
-                <option *ngFor="let level of examData; let i = index"
-                [value]="i">
-                    {{level.description}}
-                </option>
-            </select>
-        </div>
+    <div class="col-md-6">
+        <h2>Wat kan ik op deze website?</h2>
+        <p>
+            cijfer-berkenen.nl is een hulpmiddel om het cijfer voor je CSE uit te rekenen.
+        </p>
+        <p>
+            Kies hier eerst je examen, vul het aantal punten is dat je hebt gehaald, en klaar!
+        </p>
+    </div>
+    <div class="col-md-4 col-md-offset-2">
+        <form class="form">
+            <div class="form-group">
+                <label>Niveau</label>
+                <select name="level" class="form-control" [(ngModel)]="level">
+                    <option *ngFor="let level of examData; let i = index"
+                    [value]="i">
+                        {{level.description}}
+                    </option>
+                </select>
+            </div>
 
-        <div class="form-group">
-            <label>Examenonderwerp</label>
-            <select name="subject" class="form-control" [(ngModel)]="subject">
-                <option *ngFor="let subject of examData[level].subjects; let i = index" [value]="i">{{subject.description}}</option>
-            </select>
-        </div>
+            <div class="form-group">
+                <label>Examenonderwerp</label>
+                <select name="subject" class="form-control" [(ngModel)]="subject">
+                    <option *ngFor="let subject of examData[level].subjects; let i = index" [value]="i">{{subject.description}}</option>
+                </select>
+            </div>
 
-        <div class="form-group">
-            <label>Jaar en tijdvak</label>
-            <select name="subject" class="form-control" [(ngModel)]="exam">
-                <option *ngFor="let exam of examData[level].subjects[subject].exams; let i = index" [value]="i">{{exam.description}}</option>
-            </select>
-        </div>
+            <div class="form-group">
+                <label>Jaar en tijdvak</label>
+                <select name="subject" class="form-control" [(ngModel)]="exam">
+                    <option *ngFor="let exam of examData[level].subjects[subject].exams; let i = index" [value]="i">{{exam.description}}</option>
+                </select>
+            </div>
 
-        <button class="btn btn-primary" (click)="openExam(level, subject, exam)">Examen selecteren</button>
-    </form>
-</div>
+            <button class="btn btn-primary" (click)="openExam(level, subject, exam)">Examen selecteren</button>
+        </form>
+    </div>
 </div>
