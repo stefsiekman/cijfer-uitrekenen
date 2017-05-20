@@ -625,5 +625,773 @@ export const EXAM_DATA = [
                 ]
             }
         ]
+    },
+    {
+        description: "havo",
+        subjects: [
+            {
+                "description": "Nederlands",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 61,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 56,
+                        "n": 1
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 57,
+                        "n": 0.9
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 62,
+                        "n": 1.1
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 63,
+                        "n": 1.1
+                    }
+                ]
+            },
+            {
+                "description": "Fries",
+                "exams": [
+                    {
+                        "description": "2017-I",
+
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 46,
+                        "n": 0
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 45,
+                        "n": 0
+                    }
+                ]
+            },
+            {
+                "description": "Frans",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 48,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 49,
+                        "n": 0
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 49,
+                        "n": 0
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 50,
+                        "n": 0.2
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 50,
+                        "n": 0
+                    }
+                ]
+            },
+            {
+                "description": "Duits",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 50,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 52,
+                        "n": 0.8
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 50,
+                        "n": 0.5
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 51,
+                        "n": 1
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 51,
+                        "n": 1
+                    }
+                ]
+            },
+            {
+                "description": "Engels",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 49,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 49,
+                        "n": 1.1
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 48,
+                        "n": 1.1
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 48,
+                        "n": 0.5
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 47,
+                        "n": 0.5
+                    }
+                ]
+            },
+            {
+                "description": "Spaans",
+                "exams": [
+                    {
+                        "description": "2017-I",
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 47,
+                        "n": 1.2
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 45,
+                        "n": 1.2
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 49,
+                        "n": 1
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 47,
+                        "n": 1
+                    }
+                ]
+            },
+            {
+                "description": "Russisch",
+                "exams": [
+                    {
+                        "description": "2017-I",
+
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 49,
+                        "n": 0.7
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 49,
+                        "n": 0.7
+                    }
+                ]
+            },
+            {
+                "description": "Turks",
+                "exams": [
+                    {
+                        "description": "2017-I",
+
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 56,
+                        "n": 1
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 55,
+                        "n": 0.7
+                    }
+                ]
+            },
+            {
+                "description": "Arabisch",
+                "exams": [
+                    {
+                        "description": "2017-I",
+
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 49,
+                        "n": 0.7
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 46,
+                        "n": 0.7
+                    }
+                ]
+            },
+            {
+                "description": "geschiedenis",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 71,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 72,
+                        "n": 1.3
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 73,
+                        "n": 1.3
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 74,
+                        "n": 1.5
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 75,
+                        "n": 1.1
+                    }
+                ]
+            },
+            {
+                "description": "aardrijkskunde",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 63,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 63,
+                        "n": 1
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 63,
+                        "n": 1
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 63,
+                        "n": 1.1
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 64,
+                        "n": 1
+                    }
+                ]
+            },
+            {
+                "description": "wiskunde A",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 80,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 81,
+                        "n": 1
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 79,
+                        "n": 1
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 80,
+                        "n": 1
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 83,
+                        "n": 1
+                    }
+                ]
+            },
+            {
+                "description": "wiskunde A (oud programma)",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 79,
+
+                    }
+                ]
+            },
+            {
+                "description": "wiskunde B",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 79,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 78,
+                        "n": 1.6
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 77,
+                        "n": 1.5
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 78,
+                        "n": 1.6
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 80,
+                        "n": 1.2
+                    }
+                ]
+            },
+            {
+                "description": "wiskunde B (oud programma)",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 78,
+
+                    }
+                ]
+            },
+            {
+                "description": "natuurkunde",
+                "exams": [
+                    {
+                        "description": "2017-I",
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 74,
+                        "n": 1.5
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 79,
+                        "n": 1.2
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 74,
+                        "n": 1.2
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 77,
+                        "n": 1.2
+                    }
+                ]
+            },
+            {
+                "description": "scheikunde",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 76,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 79,
+                        "n": 1.7
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 77,
+                        "n": 1.7
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 76,
+                        "n": 1.8
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 77,
+                        "n": 1.8
+                    }
+                ]
+            },
+            {
+                "description": "biologie",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 75,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 75,
+                        "n": 1
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 77,
+                        "n": 1
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 80,
+                        "n": 1.7
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 78,
+                        "n": 0.7
+                    }
+                ]
+            },
+            {
+                "description": "economie",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 48,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 47,
+                        "n": 1.3
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 52,
+                        "n": 1.4
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 47,
+                        "n": 1.8
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 58,
+                        "n": 1.8
+                    }
+                ]
+            },
+            {
+                "description": "management & organisatie",
+                "exams": [
+                    {
+                        "description": "2017-I",
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 60,
+                        "n": 0.8
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 58,
+                        "n": 0.8
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 63,
+                        "n": 0.5
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 59,
+                        "n": 0.5
+                    }
+                ]
+            },
+            {
+                "description": "muziek",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 75,
+
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 75,
+                        "n": 1.4
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 78,
+                        "n": 0.9
+                    }
+                ]
+            },
+            {
+                "description": "tekenen, handvaardigheid, textiele vormgeving CSE",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 79,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 80,
+                        "n": 1.7
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 85,
+                        "n": 1.8
+                    }
+                ]
+            },
+            {
+                "description": "filosofie",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 46,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 47,
+                        "n": 1.4
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 45,
+                        "n": 1.4
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 42,
+                        "n": 1.6
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 42,
+                        "n": 1.6
+                    }
+                ]
+            },
+            {
+                "description": "maatschappijwetenschappen",
+                "exams": [
+                    {
+                        "description": "2017-I",
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 66,
+                        "n": 0.7
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 71,
+                        "n": 0.7
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 68,
+                        "n": 1.3
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 77,
+                        "n": 1.3
+                    }
+                ]
+            },
+            {
+                "description": "maatschappijwetenschappen (pilot)",
+                "exams": [
+                    {
+                        "description": "2017-I",
+
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 57,
+                        "n": 1.5
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 56,
+                        "n": 1.5
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 58,
+                        "n": 1.4
+                    }
+                ]
+            },
+            {
+                "description": "kunst (dans/drama/muziek/beeldende vormgeving/algemeen)",
+                "exams": [
+                    {
+                        "description": "2017-I",
+                        "l": 66,
+
+                    },
+                    {
+                        "description": "2016-II",
+                        "l": 65,
+                        "n": 1
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 66,
+                        "n": 1
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 63,
+                        "n": 1.4
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 72,
+                        "n": 1.4
+                    }
+                ]
+            },
+            {
+                "description": "wiskunde A (pilot)",
+                "exams": [
+                    {
+                        "description": "2016-II",
+                        "l": 83,
+                        "n": 1.5
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 84,
+                        "n": 1.5
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 80,
+                        "n": 1
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 85,
+                        "n": 1
+                    }
+                ]
+            },
+            {
+                "description": "wiskunde B (pilot)",
+                "exams": [
+                    {
+                        "description": "2016-II",
+                        "l": 75,
+                        "n": 1.6
+                    },
+                    {
+                        "description": "2016-I",
+                        "l": 77,
+                        "n": 1.5
+                    },
+                    {
+                        "description": "2015-II",
+                        "l": 78,
+                        "n": 2
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 76,
+                        "n": 1.5
+                    }
+                ]
+            },
+            {
+                "description": "tekenen, handvaardigheid, textiele vormgeving",
+                "exams": [
+                    {
+                        "description": "2015-II",
+                        "l": 76,
+                        "n": 1.4
+                    },
+                    {
+                        "description": "2015-I",
+                        "l": 80,
+                        "n": 1.4
+                    }
+                ]
+            },
+            {
+                "description": "natuurkunde (bezem)",
+                "exams": [
+                    {
+                        "description": "2015-I",
+                        "l": 80,
+                        "n": 1.4
+                    }
+                ]
+            },
+            {
+                "description": "scheikunde (bezem)",
+                "exams": [
+                    {
+                        "description": "2015-I",
+                        "l": 80,
+                        "n": 1.3
+                    }
+                ]
+            },
+            {
+                "description": "biologie (bezem)",
+                "exams": [
+                    {
+                        "description": "2015-I",
+                        "l": 74,
+                        "n": 1.2
+                    }
+                ]
+            }
+        ]
+
+
     }
 ]
